@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html class="no-js wf-loading is-en" lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <title>幸纪春秋</title>
+    <meta name="description" content="幸纪春秋个人主页，关于热爱生活的记录和思考。">
+    <meta name="keywords" content="个人博客, 幸纪春秋, 热爱生活, 自我成长">
+    <link rel="icon" href="https://www.xins.live/assets/images/icon.png">
+    <link rel="stylesheet" href="css/index.css">
+    <script>
+        var ua = (navigator.userAgent || navigator.vendor || window.opera).toLowerCase();
+        document.documentElement.className += /(iPad|iPhone|Android)/i.test(ua) ? ' is-mobile' : ' is-desktop';
+        document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+        if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+            window.location.href = "https://note.xins.live";
+        }
+    </script>
+    <script defer src="https://www.xins.live/js/TweenLite.js"></script>
+    <script defer src="https://www.xins.live/js/three.r112.js"></script>
+    <script defer src="https://www.xins.live/js/index.js"></script>
+</head>
+
+<body>
+    <header id="header" class="font-subheader cache">
+        <div id="header-content">
+            <a aria-label="homepage" id="header-logo" data-has-parsed="true">幸纪春秋</a>
+            <ul id="header-menu" class="nav">
+                <li class="header-menu-item header-item">
+                    <a target="_blank" href="https://note.xins.live" data-has-parsed="true">
+                        <div class="header-menu-item-mask">个人博客</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="header-menu-btn"></div>
+    </header>
+    <canvas id="canvas"></canvas>
+    <div id="app">
+        <div id="main" data-scroll-tooltip="Scroll to begin">
+            <div id="main-scroll">
+                <div id="page-container">
+                    <main id="about" class="page is-about" data-id="about" data-page-id="about" data-url="about"
+                        data-title="幸纪春秋-热爱可抵漫长岁月！">
+                        <section id="about-hero" class="hero is-full">
+                            <div id="about-hero-context" class="hero-context flex-vertical">
+                                <div class="hero-inner"
+                                    style="transform: translate3d(0px, 0px, 0px); opacity: 1; visibility: visible;">
+                                    <h1 id="about-hero-title" class="hero-title flex-vertical"
+                                        style="visibility: visible;">
+                                        Welcome To Xin's Live
+                                    </h1>
+                                    <h4 id="about-hero-desc" class="hero-desc flex-vertical"
+                                        style="visibility: visible;">
+                                    </h4>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="about-blog" class="is-full margin-bottom-full">
+                            <div id="about-blog-context" class="sec-context flex-vertical">
+                                <div class="sec-context-inner is-right darker-bg" style="opacity: 0;">
+                                    <h4 id="about-blog-subtitle" class="about-sec-subtitle font-header">关于我</h4>
+                                    <h4 id="about-services-subtitle" class="about-sec-title font-header">
+                                        我是一个心怀梦想，热爱生活的人，追求内心的平静与成长，享受每一个细微而美好的瞬间。
+                                        喜欢探索未知的世界，热衷于通过文字和影像记录自己的生活与思考，希望用自己的方式感染更多的人。</h4>
+                                    <h4 id="about-services-subtitle" class="about-sec-title font-header">
+                                        对我来说，生活不仅仅是忙碌和压力，更是一场旅程，每一步都值得细细品味。
+                                        我坚信只要心中充满热爱，未来的路一定会更加明朗。</h4>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="about-services" class="is-full">
+                            <div id="about-services-context" class="sec-context flex-vertical">
+                                <div class="sec-context-inner is-right darker-bg" style="opacity: 0;">
+                                    <h3 id="about-services-title" class="about-sec-subtitle">
+                                    生活明朗，万物可爱
+                                    </h3>
+                                    <h4 id="about-services-subtitle" class="about-sec-title font-header">
+                                    你所热爱的就是你的生活！每个人的生活都是独一无二的篇章，而你对生活的热爱决定了这篇章的色彩与深度。
+                                    热爱让人有动力去追逐梦想，享受生命中的点滴，去发掘平凡中的不凡。</h4>
+                                    <h4 id="about-services-subtitle" class="about-sec-title font-header">
+                                    无论是静谧的阅读时光，还是奔波在路途中的风景，生活的每一刻都充满着无尽的可能。
+                                    当你选择去拥抱生活中的美好，哪怕是微小的喜悦和简单的满足，它都会变得无比珍贵。</h4>
+                                    <h4 id="about-services-subtitle" class="about-sec-title font-header">
+                                    正如有人所说，“生活不会辜负每一个热爱它的人”，只要你愿意用心去感知，生活本身就是最好的礼物。
+                                    因此，不论遇到怎样的挑战与困难，只要心中怀有热爱与坚定的信念，生活总会回馈以丰厚的美好。</h4>
+                                    <div id="about-services-items"></div>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="is-full"></div>
+                    </main>
+                </div>
+                <div id="featured">
+                    <div id="featured-context" class="sec-context">
+                        <div class="sec-context-inner">
+                            <h3 id="featured-title" class="sec-title font-header split-line-up-effect">
+                                <div class="split-line" style="width: 400px; height: 103px;">
+                                    <div class="split-line-inner" style="transform: translate3d(0px, 105%, 0px);">未来可期
+                                    </div><br>
+                                </div>
+                            </h3>
+                            <div id="featured-desc" class="sec-desc font-bold split-line-up-effect"
+                                style="margin: 0 0 50px 0;">
+                                十年前，我们仰望星空；<br>十年后，我们将俯视大地。
+                            </div>
+                        </div>
+                        <div id="featured-items-container" style="transform: skewY(0deg) translateZ(0px);">
+
+                            <div class="featured-item" data-id="img-1" style="display: block;">
+                                <a class="featured-item-link" target="_blank" data-has-parsed="true">
+                                    <div class="featured-item-image"
+                                        style="border-radius: 25px; height: 505px; transform: translate(0px, 10vh) scale3d(1, 1.6, 1);background-image:url(https://www.xins.live/assets/images/1.webp);background-size: cover;background-position: center; ">
+                                        <div class="featured-item-image-inner"></div>
+                                    </div>
+                                    <div class="featured-item-context is-white-content" data-base-color="#00f"
+                                        data-has-parsed="true"
+                                        style="transform: translate(20px, 0vh) scale3d(1.6, 1, 1);">
+                                        <div class="featured-item-desc font-header-bold split-line-mask-effect">
+                                            在安静中寻找地坛，而不是在地坛中寻找安静
+                                        </div>
+                                        <div class="featured-item-client split-line-mask-effect">
+                                            我在未来等你！
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="featured-item" data-id="img-2" style="display: block;">
+                                <a class="featured-item-link" target="_blank" data-has-parsed="true">
+                                    <div class="featured-item-image"
+                                        style="border-radius: 25px; height: 505px; transform: translate(0px, 10vh) scale3d(1, 1.6, 1);background-image:url(https://www.xins.live/assets/images/2.webp);background-size: cover;background-position: center;">
+                                        <div class="featured-item-image-inner"></div>
+                                    </div>
+                                    <div class="featured-item-context is-white-content" data-base-color="#00f"
+                                        data-has-parsed="true"
+                                        style="transform: translate(20px, 0vh) scale3d(1.6, 1, 1);background:url(index.html) cover center">
+                                        <div class="featured-item-desc font-header-bold split-line-mask-effect">
+                                            多一份知识便多一份自由的空间
+                                        </div>
+                                        <div class="featured-item-client split-line-mask-effect">
+                                            为实现中华民族伟大复兴的中国梦而努力奋斗！
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="featured-item" data-id="img-4" style="display: block;">
+                                <a class="featured-item-link" target="_blank" data-has-parsed="true">
+                                    <div class="featured-item-image"
+                                        style="border-radius: 25px; height: 505px; transform: translate(0px, 10vh) scale3d(1, 1.6, 1);background-image:url(https://www.xins.live/assets/images/3.webp);background-size: cover;background-position: center;">
+                                        <div class="featured-item-image-inner"></div>
+                                    </div>
+                                    <div class="featured-item-context is-white-content" data-base-color="#00f"
+                                        data-has-parsed="true"
+                                        style="transform: translate(20px, 0vh) scale3d(1.6, 1, 1);">
+                                        <div class="featured-item-desc font-header-bold split-line-mask-effect">
+                                            要有听雨的心情和淋雨的心情
+                                        </div>
+                                        <div class="featured-item-client split-line-mask-effect">
+                                            学着去做一个潇洒的NPC！
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="featured-item" data-id="img-3" style="display: block;">
+                                <a class="featured-item-link" target="_blank" data-has-parsed="true">
+                                    <div class="featured-item-image"
+                                        style="border-radius: 25px; height: 505px; transform: translate(0px, 10vh) scale3d(1, 1.6, 1);background-image:url(https://www.xins.live/assets/images/4.webp);background-size: cover;background-position: center;">
+                                        <div class="featured-item-image-inner"></div>
+                                    </div>
+                                    <div class="featured-item-context is-white-content" data-base-color="#00f"
+                                        data-has-parsed="true"
+                                        style="transform: translate(20px, 0vh) scale3d(1.6, 1, 1);">
+                                        <div class="featured-item-desc font-header-bold split-line-mask-effect">
+                                            在紧张的时间中适当"关机"
+                                        </div>
+                                        <div class="featured-item-client split-line-mask-effect">
+                                            与其熬夜，不如对明天抱有期待
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="contact">
+                    <div id="contact-main">
+                        <div id="contact-context" class="sec-context flex-vertical">
+                            <div class="sec-context-inner darker-bg is-left"
+                                style="transform: translate3d(0px, -505.8px, 0px); opacity: 0;">
+                                <h4 id="contact-title">Look for me😃</h4>
+                                <div id="contact-desc">世间所有相遇，都是久别重逢🔥</div>
+                                <div id="contact-columns">
+                                    <div class="contact-column">
+                                        <div class="contact-column-title font-bold"></div>
+                                        <ul class="nav">
+                                            <li class="contact-column-item">
+                                                <a href="mailto:mail@xins.live">邮箱：mail@xins.live</a>
+                                            </li><br>
+                                            <li class="contact-column-item">
+                                                <a href="https://note.xins.live">博客：note.xins.live</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="clear-fix"></div>
+                            </div>
+                        </div>
+                    </div>
+                  <footer id="footer" class="footer">
+                     <div class="footer-content">
+                     <div class="footer-links">
+                     <a rel="noopener noreferrer" target="_blank" href="https://beian.miit.gov.cn">鄂ICP备2024070193号</a><img src="https://www.xins.live/assets/images/GA.webp" alt="公网安备" height="18px" width="18px" style="vertical-align: text-bottom;"><a href="https://beian.mps.gov.cn/#/query/webSearch?code=42092202000073" rel="noreferrer" target="_blank">鄂公网安备42092202000073号</a>
+                     </div>
+                     </div>
+                  </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main-scrollbar" style="display: block;">
+        <div id="main-scrollbar-indicator" style="height: 80.8985px; transform: translate3d(0px, 0px, 0px);"></div>
+    </div>
+    <div id="main-scroll-indicator" style="opacity: 1;">
+        <div id="main-scroll-indicator-text">滚动查看更多</div>
+        <div id="main-scroll-indicator-arrow-container">
+            <svg xmlns="http://www.w3.org/2000/svg" width="5" height="40" viewBox="0 0 5 40">
+                <path d="M0,40V0H1V35H5Z"></path>
+            </svg>
+        </div>
+    </div>
+    <a id="snd-btn" class="cache"></a>
+    <div id="preloader" class="cache" data-gesture="Click anywhere to begin">
+        <canvas id="preloader-canvas"></canvas>
+    </div>
+    <div id="cursor-follow" class="font-bold"></div>
+</body>
+</html>
